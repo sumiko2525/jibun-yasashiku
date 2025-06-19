@@ -1,0 +1,106 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Arial', sans-serif;
+  background: #f6f4ee; /* やさしい生成り色 */
+  color: #3b3b3b;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffffdd; /* 白ベースの透明感 */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #52796f; /* 葉のような深緑 */
+}
+
+button {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 15px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background: #84a98c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #52796f;
+}
+
+textarea {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#response {
+  background: #ffffff;
+  border-left: 4px solid #84a98c;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 16px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#logList {
+  margin-top: 30px;
+  padding: 10px;
+  background: #f9f9f7;
+  border-radius: 10px;
+}
+
+#logList div {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.guide {
+  text-align: center;
+  color: #52796f;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: -10px;
+  padding: 0 20px;
+}
+
+.meditation-screen {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #eef6f3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #37665e;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 { font-size: 1.4em; }
+  h2 { font-size: 1.2em; }
+  button { font-size: 15px; }
+  textarea { font-size: 15px; }
+  #response { font-size: 15px; }
+}

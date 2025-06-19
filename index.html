@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自分にやさしくする習慣</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 自分にやさしくする習慣 🌿</h1>
+
+    <button id="loginBtn">Googleでログイン</button>
+    <button id="logoutBtn" style="display:none;">ログアウト</button>
+    <div id="userName"></div>
+
+    <button id="startBtn">やさしくする時間、はじめる</button>
+
+    <p class="guide">
+      瞑想指導：小林亜希子先生<br>
+      臨床心理士・公認心理師・MSC講師【trained teacher】・MBRP講師【MBRP:アディクションのためのマインドフルネス再発予防】<br>
+      アディクションへの支援とマインドフルネスが専門。
+    </p>
+
+    <div id="meditationScreen" style="display: none;" class="meditation-screen">
+      <h2>🧘‍♀️ やさしくする時間中...</h2>
+      <p>💡 ゆったり、ゆっくり</p>
+    </div>
+
+    <audio id="meditationAudio" src="meditation.m4a"></audio>
+
+    <div id="diarySection" style="display:none;">
+      <h2>今日のきづきや気持ち</h2>
+      <textarea id="diary" placeholder="気持ちを書いてみましょう"></textarea>
+      <button id="submitBtn">ChatGPTからことばをもらう</button>
+    </div>
+
+    <h2>または、今すぐ書いてもOK</h2>
+    <button id="skipToDiaryBtn">すぐに気づきを書く</button>
+
+    <div id="responseSection" style="display:none;">
+      <h2>ChatGPTからのことば</h2>
+      <div id="response"></div>
+    </div>
+
+    <h2>これまでのきろく</h2>
+    <div id="logList"></div>
+  </div>
+</body>
+</html>
